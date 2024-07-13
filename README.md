@@ -1,5 +1,9 @@
 
-# Explanation
+# Link to the tool
+
+<https://ivank.github.io/ddecryptor/>
+
+## Explanation
 
 So you've moved to a new place, and want to switch to your own, gaming grade powerful router.
 However THE MAN (your landlord, internet provider, parent, or maybe significant other)
@@ -30,5 +34,3 @@ zlib.inflate(zipped, (err, buffer) => {
 But I assume not everyone is proficient with NodeJS so I figured I might rewrite it as an in-browser plain javascript code. I've tested this with DLink DIR 825 router, but I presume it would work with others.
 
 If you stumble on this page and successfully decode yours, please drop me a line in Github so I know I've helped someone!
-
-Link to the tool: 
