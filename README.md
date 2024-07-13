@@ -14,7 +14,7 @@ the PPPoE configuration and THE MAN has either forgotten or doesn't want to prov
 
 Turns out, if you have physical access to the hardware, there is not much that can stop you. Once in the admin interface <http://192.168.0.1> you can just download the backup, and extract the password from there.
 
-It appears as though it an "encrypted" file. But its all security by obscurity. After [reading up a little bit on it in stack overflow](https://superuser.com/questions/1543100/cant-open-this-config-xml-file-which-is-from-my-router) I found out that its just a zip with 32 bytes of metadata appended to the top.
+It appears as though it is an "encrypted" file. But its all security by obscurity. After [reading up a little bit on it in stack overflow](https://superuser.com/questions/1543100/cant-open-this-config-xml-file-which-is-from-my-router) I found out that its just a zip with 32 bytes of metadata appended to the top.
 
 > Be careful with `RouterPassView` - the distributions I've managed to find were mostly viruses.
 
