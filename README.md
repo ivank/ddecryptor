@@ -1,10 +1,3 @@
----
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: default
----
-<!-- markdownlint-disable MD033 -->
 
 # Explanation
 
@@ -37,50 +30,3 @@ zlib.inflate(zipped, (err, buffer) => {
 But I assume not everyone is proficient with NodeJS so I figured I might rewrite it as an in-browser plain javascript code. I've tested this with DLink DIR 825 router, but I presume it would work with others.
 
 If you stumble on this page and successfully decode yours, please drop me a line in Github so I know I've helped someone!
-
-## Usage
-
-You can start by selecting your router's backup file `config.xml`.
-
-<label class="btn">
-Select your config.xml file
-<input
-  type="file"
-  name="decrypt"
-  class="hidden"
-  data-decrypt />
-</label>
-
-<section class="hidden" data-result>
-  <h2>Decrypted Successfully</h2>
-  <p>
-    The decrypted contents of <code>config.xml</code> file can be downloaded from here:
-  </p>
-  <p><a class="btn" download="config-decrypted.txt" data-link>Download decrypted config.xml</a></p>
-  <section>
-    <p>Attempting to extract PPPoE Credentials:</p>
-    <table>
-      <thead>
-        <tr>
-          <th>Connection Name</th>
-          <th>Username</th>
-          <th>Password</th>
-          <th>Decoded Password</th>
-        </tr>
-      </thead>
-      <tbody data-credentials>
-        <tr data-template class="hidden">
-          <td data-name></td>
-          <td data-username></td>
-          <td data-password></td>
-          <td data-decoded></td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-</section>
-
-<section class="hidden" data-error>
-<h2>Error decrypting file</h2>
-<p data-error-content></p>
-</section>
